@@ -19,41 +19,56 @@ main {
     font-size: 20px;
 }
 
-form {
-
+#input-div {
+    margin-bottom: 10px;
+    width: 95%;
     padding: 20px 40px;
     background-color: white;
-    border-radius: 10px;
-    /*box-shadow: dodgerblue;*/
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 5px 0 #012CA3;
 }
 
-form label {
+#input-div label {
     margin-bottom: 20px;
     display: block;
     color: black;
 }
 
-form input {
+#input-div input {
     border: 2px solid black;
     border-radius: 5px;
-    padding: 6px 50px;
+    padding: 2px 6px 6px 10px;
     text-align: center;
-
+    font-size: 18px;
+    margin-right: 10px;
 }
 
-form button {
+#input-div button {
     background-color: #5A01A7;
     color: inherit;
     border-radius: 15px;
-    padding: 0.7em 3em;
+    padding: 0.8em 3em;
+    border: none;
+
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: black;
 }
 
 main p {
     display: flex;
-    background-color: #00471B;
     gap: 5px;
+    background-color: #00471B;
     font-size: 1.3em;
     width: 95%;
     padding: 20px 20px;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+.hidden {
+    display: none;
 }

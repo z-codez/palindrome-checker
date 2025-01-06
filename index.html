@@ -13,19 +13,27 @@
 <body>
   <main>
     <h1>Is it a Palindrome?</h1>
-    <form id="input-div" action="#" method="post">
+    <div id="input-div">
       <label for="input">Enter in text to check for a palindrome:</label>
-      <input type="text" id="input">
+      <input  type="text" id="input" value="">
       <button type="submit">Check</button>
-    </form>
+      <div id="result"></div>
+    </div>
     <p>
-      <span>&#128161;</span> A palindrome is a word or sentence
+      <span>&#128161;</span> <span>A <dfn>palindrome</dfn> is a word or sentence
       that's spelled the same way both
       forward and backward, ignoring
-      punctuation, case, and spacing.
+      punctuation, case, and spacing.</span>
     </p>
   </main>
   <script src="js/app.js"></script>
+
+<!--  Prevents the form resubmission alert message on refresh-->
+  <script>
+    if ( window.history.replaceState ) {
+      window.history.replaceState( null, null, window.location.href );
+    }
+  </script>
 
 </body>
 
