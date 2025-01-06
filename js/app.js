@@ -27,8 +27,8 @@ function checkPalindrome() {
     }
 
     if (formattedString === reversedString) {
-        resultDiv.innerText = inputString + " is a palindrome.";
+        resultDiv.innerText = inputString + " is a palindrome";
     } else {
-        resultDiv.innerText = inputString + " is not a palindrome.";
+        resultDiv.innerText = inputString + " is not a palindrome";
     }
 }
